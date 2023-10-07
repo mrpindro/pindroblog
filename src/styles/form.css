@@ -1,0 +1,173 @@
+form {
+    margin-top: 20px;
+    box-shadow: 0 0 3px;
+    border-radius: 10px;
+    width: 400px;
+    height: auto;
+    padding: 10px;
+    overflow: hidden;
+    gap: 10px;
+}
+form label {
+    font-weight: 600;
+}
+.form-banner {
+    padding: 10px;
+    background-color: #ff4500;
+    border-radius: 50%;
+}
+.form-icon {
+    font-size: 30px;
+    color: #fff;
+}
+.form-group {
+    width: 100%;
+    height: 50px;
+    position: relative;
+}
+.blog-userId {
+    display: none;
+}
+.form-control {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #555;
+    padding: 5px 15px;
+    font-size: 17px;
+}
+.form-label {
+    position: absolute;
+    z-index: 1;
+    background-color: #fff;
+    padding: 1px 2px;
+    left: 5%;
+    top: -20%;
+}
+.show-pwd {
+    position: absolute;
+    z-index: 1;
+    right: 2%;
+    top: 35%;
+}
+.form-btn {
+    background: #008000;
+    font-weight: 600;
+    color: #fff;
+}
+.toggle-reg-log {
+    gap: 5px;
+}
+.toggle-reg-log span:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+.form-input-incomplete {
+    border: 1px solid red;
+}
+
+/* EDIT USER FORM  */
+.form-action-btns {
+    gap: 10px;
+}
+.edit-user-btn, .delete-user-btn {
+    width: 180px;
+}
+.delete-user-btn {
+    background-color: #ff0000;
+}
+.form-select-grp {
+    width: 100%;
+    gap: 5px;
+}
+.form-select {
+    height: 60px;
+    width: 200px;
+    border-radius: 5px;
+    padding: 5px;
+}
+.form-select option {
+    font-size: 18px;
+}
+
+/* BLOG FORM  */
+.with-textarea {
+    height: 150px;
+    position: relative;
+}
+.with-textarea .form-label {
+    position: absolute;
+    top: -7%;
+}
+.with-textarea .form-control {
+    padding: 15px;
+    font-size: 18px;
+    font-family: 'Segoe UI', 'Roboto', sans-serif;
+}
+
+
+@media screen and (max-width: 600px) {
+    form h3 {
+        font-size: 15px;
+    }
+    .form-label {
+        font-size: 12px;
+        top: -15%;
+    }
+    .form-control {
+        font-size: 13px;
+    }
+    .with-textarea .form-control {
+        font-size: 13px;
+    }
+    .with-textarea .form-label {
+        top: -5%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    form {
+        width: 330px;
+    }
+
+    /* EDIT USER FORM  */
+    .edit-user-btn, .delete-user-btn {
+        width: 145px;
+    }
+    .form-select-grp {
+        font-size: 12px;
+    }
+    .form-select {
+        height: 40px;
+        width: 150px;
+    }
+    .form-select option {
+        font-size: 12px;
+    }
+}
+
+
+@media screen and (max-width: 350px) {
+    form {
+        width: 250px;
+    }
+    .form-file {
+        width: 100%;
+    }
+
+    /* EDIT USER FORM  */
+    .edit-user-btn, .delete-user-btn {
+        width: 105px;
+    }
+    .form-select-grp {
+        font-size: 12px;
+    }
+    .form-select {
+        height: 40px;
+        width: 150px;
+    }
+    .form-select option {
+        font-size: 12px;
+    }
+}

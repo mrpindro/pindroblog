@@ -1,0 +1,269 @@
+
+.blogs {
+    gap: 15px;
+    padding: 10px;
+    width: 800px;
+    height: auto;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+.blog-con {
+    box-shadow: 0 0 3px #333;
+    border-radius: 5px;
+    min-width: 100%;
+    width: 100%;
+    min-height: 300px;
+    height: 300px;
+}
+.blog-img {
+    height: 100%;
+    width: 300px;
+}
+.blog-img img {
+    height: 100%;
+    width: 100%;
+}
+.blog-content-all {
+    width: 450px;
+    padding: 10px;
+}
+.blog-content {
+    margin: 10px 0;
+}
+.blog-edit {
+    width: 100%;
+    background-color: #55555559;
+    border-radius: 5px;
+    padding: 5px;
+}
+.blog-edit:hover {
+    opacity: 80%;
+}
+.blog-edit .nav-links {
+    width: 100%;
+    justify-content: flex-end;
+    color: #fff;
+    font-weight: 600;
+    gap: 5px;
+}
+.creator-createdAt {
+    justify-content: space-between;
+    width: 100%;
+    background-color: #f0f0f063;
+    border-radius: 5px;
+    margin: 5px 0;
+    padding: 5px;
+}
+.creator {
+    font-weight: 600;
+}
+
+
+/* BLOG PAGE  */
+.blogpage-con {
+    min-height: 100vh;
+    /* width: 100%; */
+}
+.blogpage-img {
+    width: 100%;
+    height: 500px;
+}
+.blogpage-img img {
+    width: 100%;
+    height: 100%;
+}
+.blogpage-content-all {
+    width: 100%;
+    padding: 10px;
+}
+.blogpage-edit {
+    width: 100%;
+    background-color: #555;
+    border-radius: 5px;
+    padding: 5px;
+}
+.blogpage-edit:hover {
+    opacity: 80%;
+}
+.blogpage-edit .nav-links {
+    width: 100%;
+    color: #fff;
+    font-weight: 600;
+    gap: 5px;
+    justify-content: center;
+}
+
+
+/* Media queries  */
+@media screen and (max-width: 1350px) {
+    .blogs {
+        gap: 15px;
+        width: 600px;
+    }
+    .blog-con {
+        min-height: 250px;
+        height: 250px;
+    }
+    .blog-img {
+        width: 250px;
+    }
+    .blog-content-all {
+        width: 350px;
+    }
+}
+
+
+@media screen and (max-width: 1150px) {
+    .blogs {
+        width: 500px;
+    }
+    .blog-con {
+        min-height: 200px;
+        height: 200px;
+    }
+    .blog-img {
+        width: 200px;
+    }
+    .blog-content-all {
+        width: 300px;
+    }
+    .blog-content {
+        font-size: 15px;
+    }
+    .blog-edit {
+        padding: 3px;
+        font-size: 15px;
+    }
+    .creator-createdAt p {
+        font-size: 15px;
+    }
+
+    /* BLOG PAGE  */
+    .blogpage-img {
+        height: 300px;
+    }
+}
+
+
+@media screen and (max-width: 950px) {
+    .blogs {
+        width: 500px;
+    }
+    .blog-con {
+        min-height: 200px;
+        height: 200px;
+    }
+    .blog-img {
+        width: 200px;
+    }
+    .blog-content-all {
+        width: 300px;
+    }
+    .blog-content {
+        font-size: 15px;
+    }
+    .blog-edit {
+        padding: 3px;
+        font-size: 15px;
+    }
+    .creator-createdAt p {
+        font-size: 15px;
+    }
+
+    /* BLOG PAGE  */
+    .blogpage-img {
+        height: 300px;
+    }
+    .blogpage-content-all {
+        width: 100%;
+        padding: 10px;
+    }
+    .blogpage-edit {
+        width: 100%;
+        background-color: #555;
+        border-radius: 5px;
+        padding: 5px;
+    }
+    .blogpage-edit:hover {
+        opacity: 80%;
+    }
+    .blogpage-edit .nav-links {
+        width: 100%;
+        color: #fff;
+        font-weight: 600;
+        gap: 5px;
+        justify-content: center;
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+    .blogs {
+        width: 370px;
+    }
+    .blog-con {
+        min-height: 200px;
+        height: 200px;
+    }
+    .blog-img {
+        width: 200px;
+    }
+    .blog-content-all {
+        width: 170px;
+    }
+    .blog-content-all h3 {
+        font-size: 15px;
+    }
+    .blog-content {
+        font-size: 12px;
+    }
+    .blog-edit {
+        padding: 3px;
+        font-size: 12px;
+    }
+    .creator-createdAt p {
+        font-size: 12px;
+    }
+    .cr {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 300px) {
+    .blogs {
+        /* gap: 15px; */
+        padding: 2px;
+        width: 260px;
+    }
+    .blog-con {
+        min-height: 160px;
+        height: 160px;
+    }
+    .blog-img {
+        height: 100%;
+        width: 120px;
+    }
+    .blog-content-all {
+        width: 140px;
+    }
+    .blog-content-all h3 {
+        font-size: 13px;
+    }
+    .blog-content {
+        font-size: 11px;
+    }
+    .blog-edit {
+        font-size: 11px;
+    }
+    .creator-createdAt p {
+        font-size: 11px;
+    }
+    
+    
+    /* BLOG PAGE  */
+    .blogpage-img {
+        width: 100%;
+        height: 250px;
+    }
+}
