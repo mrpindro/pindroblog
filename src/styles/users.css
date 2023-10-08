@@ -1,8 +1,5 @@
 .userslist-con {
     padding: 10px;
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center; */
 }
 .user-con, .userslist-head {
     display: grid;

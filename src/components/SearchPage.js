@@ -3,7 +3,7 @@ import SearchInput from './SearchInput';
 import SearchResults from './SearchResults';
 import getBlogsWithAxios from '../hooks/getBlogsWithAxios';
 
-const RightBar = () => {
+const SearchPage = () => {
     const [search, setSearch] = useState('');
     const [displayResults, setDisplayResults] = useState(false);
 
@@ -18,7 +18,7 @@ const RightBar = () => {
     }, [search, setDisplayResults]);
 
     return (
-        <div className='rightbar-con'>
+        <div className='searchpage'>
             <SearchInput 
                 search={search} setSearch={(e) => setSearch(e.target.value)} 
             />
@@ -34,4 +34,4 @@ const RightBar = () => {
     );
 }
 
-export default RightBar;
+export default SearchPage;

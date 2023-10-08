@@ -1,0 +1,85 @@
+.layout-midbar {
+    display: flex;
+    justify-content: center;
+}
+.leftbar-con {
+    gap: 30px;
+    height: 100%;
+    position: relative;
+    padding: 10px;
+}
+.rightbar-con {
+    width: 100%;
+}
+.leftbar-con .logo, .leftbar-con .current-user, .leftbar-nav, .leftbar-search, .leftbar-home {
+    width: 100%;
+}
+.leftbar-con .logo {
+    border-bottom: 1px solid #333;
+}
+
+.logo img {
+    width: 70px;
+    height: 70px;
+}
+.leftbar-nav {
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+
+}
+.leftbar-nav ul {
+    gap: 10px;
+}
+.leftbar-con .current-user {
+    height: 70px;
+    align-items: center;
+}
+.leftbar-con .current-user img {
+    height: 100%;
+    width: 70px;
+    border-radius: 50%;
+}
+.leftbar-icon {
+    font-size: 20px;
+}
+.leftbar-search, .leftbar-home {
+    font-weight: 600;
+    cursor: pointer;
+}
+.leftbar-search:hover, .leftbar-home:hover {
+    opacity: 80%;
+}
+.leftbar-search {
+    display: none;
+}
+.leftbar-search p {
+    font-size: 15px;
+}
+.logout {
+    font-weight: 600;
+}
+
+
+/* Right bar  */
+.search-input-con {
+    width: 100%;
+    padding: 10px;
+}
+.search-input-con .search-form {
+    padding: 0;
+    width: 100%;
+}
+ 
+/* Search Results  */
+.search-results {
+    padding: 10px;
+    height: auto;
+}
+
+
+@media screen and (max-width: 1200px) {
+    .leftbar-search {
+        display: flex;
+    }
+}

@@ -7,7 +7,8 @@ import logo from '../image/logo.png';
 import { useSendLogoutMutation } from '../features/auth/authApiSlice';
 import { selectCurrentToken } from '../features/auth/authSlice';
 import { useSelector } from 'react-redux';
-import '../styles/leftbar.css';
+import '../styles/sidebars.css';
+import { AiOutlineFileSearch, AiOutlineHome } from 'react-icons/ai';
 
 const LeftBar = () => {
     // const { pathname } = useLocation();
@@ -52,6 +53,20 @@ const LeftBar = () => {
             <div className="current-user flex-row">
                 <img src={image || profile} alt="profile" />
                 <strong>{username}</strong>
+            </div>
+            <div 
+                className="leftbar-home flex-row"
+                onClick={() => navigate('/blogs')}
+            >
+                <AiOutlineHome className='leftbar-icon' />
+                <p>HOME</p>
+            </div>
+            <div 
+                className="leftbar-search flex-row"
+                onClick={() => navigate('/blogs/search')}
+            >
+                <AiOutlineFileSearch className='leftbar-icon' />
+                <p>SEARCH BLOG</p>
             </div>
             <nav className='leftbar-nav'> 
                 <ul className='flex-column'>

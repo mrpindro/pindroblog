@@ -3,6 +3,7 @@ import '../styles/form.css';
 import Login from './Login';
 import Register from './Register';
 import Header from './Header';
+import Footer from './Footer';
 
 const Auth = () => {
     const [isLogin, setIsLogin] = useState(true);
@@ -20,13 +21,14 @@ const Auth = () => {
     return (
         <main className='main-con'>
             <Header />
-            <div className="auth-con flex-column">
+            <div className="auth-con flex-column main-con">
                 {isLogin ? (
                     <Login navRegister={navRegister} />
                 ) : (
                     <Register navLogin={navLogin} />
                 )}
             </div>
+            <Footer />
         </main>
     );
 }

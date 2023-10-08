@@ -1,5 +1,4 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Footer from "./components/Footer";
 import Layout from "./components/Layout";
 import Auth from "./components/Auth";
 import UsersList from "./components/UsersList";
@@ -14,6 +13,7 @@ import useAuth from "./hooks/useAuth";
 import Public from "./components/Public";
 import Blogs from "./components/Blogs";
 import PageNotFound from "./components/PageNotFound";
+import SearchPage from "./components/SearchPage";
 
 function App() {
   const { isAdmin } = useAuth();
@@ -27,10 +27,12 @@ function App() {
 
           <Route element={<PersistLogin />}>
             <Route path="*" element={<PageNotFound />} />
+
             <Route path="/blogs" element={<Layout />}>
               <Route index element={<Blogs />} />
               <Route path="blogs/new" element={<CreateBlog />} />
               <Route path="blogs/:id" element={<BlogPage />} />
+              <Route path="search" element={<SearchPage />} />
               <Route path="blogs/edit/:id" element={<EditBlog />} />
               <Route element={<Prefetch />}>
                 <Route path="admin/users" 
@@ -43,7 +45,7 @@ function App() {
             </Route>
           </Route>
         </Routes>
-        <Footer />
+        {/* <Footer /> */}
       </Router>
     </div>
   );
